@@ -7,6 +7,9 @@ def get_numbers_ticket():
             if min < 1:
                 print(f"Minimum number can\'t be negative or equal to zero, you entered:{min}")
                 continue
+            if min > 1000:
+                print(f"Minimum should be les then 1000")
+                continue
             max = int(input("Enter maximum number: "))
             if max > 1000:
                 print(f"Maximum number can\'t be higher than 1000, you entered:{max}")
