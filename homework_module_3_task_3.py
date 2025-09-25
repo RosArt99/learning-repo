@@ -1,7 +1,7 @@
 import re
 
 def normalize_phone(phone_number):
-    pattern = r"[^0-9+]" # pattern [] - set of characters; ^ all except this characters; + sign in the end to keep + sign.
+    pattern = r"[^0-9+]" # pattern [] - set of characters; ^ all except this characters; + sign in the end to keep + sign
     modified_phone_number = re.sub(pattern, '', phone_number) #re.sub with defined pattern
     modified_phone_number = modified_phone_number.replace("+", '') #deleting + 
     if not modified_phone_number.startswith("38"): 
